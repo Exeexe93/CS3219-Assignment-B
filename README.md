@@ -2,7 +2,7 @@
 
 ## Part B1
 
-Instructions on how to run the API locally and access te deployed API.
+Instructions on how to run the API locally and access the deployed API.
 
 1) In order to run this assignment, you are required to download [NodeJs](https://nodejs.org/en/download/), [MongoDb](https://www.mongodb.com/try/download/community) and [PostMan](https://www.postman.com/).
 
