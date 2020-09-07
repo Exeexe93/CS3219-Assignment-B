@@ -27,7 +27,7 @@ Instructions on how to run the API locally and access the deployed API.
     1. Create new contact:
         1. Under Body tab, input the url address.
         1. Change to **Post** request.
-        1. Add the key, email, phone and gender with their values.
+        1. Under the x-www-form-urlencoded tab, fill in the name, email, phone and gender with their values.
         1. Press the **Send** button.
 
 * http:///localhost:8080/contacts/{input the contact id here}
@@ -41,7 +41,7 @@ Instructions on how to run the API locally and access the deployed API.
     1. Update the details of the individual contact:
         1. Under Body tab, input the url address.
         1. Change to **Put** request.
-        1. Input the key, email, phone and gender with their values.
+        1. Under the x-www-form-urlencoded tab, fill in the name, email, phone and gender with their values.
         1. Press the **Send** button.
         1. The contact is updated with the values you have key.
 
