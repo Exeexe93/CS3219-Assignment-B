@@ -16,7 +16,7 @@ Instructions on how to run the API locally and access the deployed API.
 
 6) In the PostMan, we could communicate with our database by the different functions via the following url address:
 
-* http:///localhost:8080/contacts
+* http:///localhost:8080/api/contacts
 
     1. Get all contacts:
         1. Under Body tab, input the url address.
@@ -30,7 +30,7 @@ Instructions on how to run the API locally and access the deployed API.
         1. Under the x-www-form-urlencoded tab, fill in the name, email, phone and gender with their values.
         1. Press the **Send** button.
 
-* http:///localhost:8080/contacts/{input the contact id here}
+* http:///localhost:8080/api/contacts/{input the contact id here}
 
     1. Get the details of the individual contact:
         1. Under Body tab, input the url address.
