@@ -34,3 +34,6 @@ app.use('/api', apiRoutes);
 app.listen(port, function () {
     console.log("Running application on port " + port);
 });
+
+// Export our app for testing purpose
+module.exports = app;
