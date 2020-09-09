@@ -1,5 +1,7 @@
 # CS3219-Assignment-B
 
+![travis status](https://travis-ci.com/Exeexe93/CS3219-Assignment-B.svg?branch=master)
+
 ## Part B1
 
 Instructions on how to run the API locally and access the deployed API:
