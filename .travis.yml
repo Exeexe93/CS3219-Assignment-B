@@ -3,5 +3,7 @@ node_js:
     - 7
 services:
     - mongodb
-script: npm run test
+script: 
+    - cd application 
+    - npm run test
 dist: trusty
