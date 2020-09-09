@@ -3,6 +3,8 @@ node_js:
     - 7
 services:
     - mongodb
+before_script:
+    - npm install
 script: 
     - cd application 
     - npm run test
