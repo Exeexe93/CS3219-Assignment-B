@@ -2,7 +2,7 @@
 
 ## Part B1
 
-Instructions on how to run the API locally and access the deployed API.
+Instructions on how to run the API locally and access the deployed API:
 
 1) In order to run this assignment, you are required to download [NodeJs](https://nodejs.org/en/download/), [MongoDb](https://www.mongodb.com/try/download/community) and [PostMan](https://www.postman.com/).
 
@@ -50,3 +50,12 @@ Instructions on how to run the API locally and access the deployed API.
         1. Change to **Delete** request.
         1. Press the **Send** button.
         1. The contact should be deleted from the database.
+
+## Part B2
+
+1. Instructions on run test locally:
+    
+    1. Do the step 1-3 for [Part B1](#Part-B1)
+
+    1. Run **npm run test** to run mocha to test on the code.
+
