@@ -59,3 +59,20 @@ Instructions on how to run the API locally and access the deployed API:
 
     1. Run **npm run test** to run mocha to test on the code.
 
+1. Instructions on run test via travis:
+    
+    1. Go to [travis website](https://travis-ci.com/).
+
+    1. Go to setting, under **Respositories** tab, click on Manage respositories on Github.
+
+    1. Login to your github if required.
+
+    1. Under the respository access, either select all respositories or only select **CS3219-Assignment-B** respository.
+
+    1. Afterward, make sure that you have **.travis.yml** file at the root directory, which is the same directory as README.md.
+
+    1. If not, create a new file called  **.travis.yml** and put the following details into it:
+
+        ![.travis.yml](https://github.com/Exeexe93/CS3219-Assignment-B/blob/master/images/travis.PNG?raw=true)
+
+    1. After setting up the .travis.yml file, you can edit the README.md and push it to your repository and the travis will run the test.
