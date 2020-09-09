@@ -1,6 +1,6 @@
 # CS3219-Assignment-B
 
-![travis status](https://travis-ci.com/Exeexe93/CS3219-Assignment-B.svg?branch=master)
+[![travis status badge](https://travis-ci.com/Exeexe93/CS3219-Assignment-B.svg?branch=master)](https://travis-ci.com/github/Exeexe93/CS3219-Assignment-B)
 
 ## Part B1
 
