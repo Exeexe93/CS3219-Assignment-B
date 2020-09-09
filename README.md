@@ -10,13 +10,15 @@ Instructions on how to run the API locally and access the deployed API:
 
 2) Clone the code from [github repository](https://github.com/Exeexe93/CS3219-Assignment-B.git)
 
-3) After cloning the code, you are required to install the relevant node modules via command prompt using **npm install** at the the same directory as index.js.
+3) After cloning the code, change directory to the application folder by **cd application**.
 
-4) You could run the Mongodb database by **nodemon index**.
+4) Then, you are required to install the relevant node modules via command prompt using **npm install**. 
 
-5) Afterwards, we could start accessing the PostMan to communicate with our database.
+5) You could run the Mongodb database by **nodemon index**.
 
-6) In the PostMan, we could communicate with our database by the different functions via the following url address:
+6) Afterwards, we could start accessing the PostMan to communicate with our database.
+
+7) In the PostMan, we could communicate with our database by the different functions via the following url address:
 
 * http:///localhost:8080/api/contacts
 
@@ -57,7 +59,7 @@ Instructions on how to run the API locally and access the deployed API:
 
 1. Instructions on run test locally:
     
-    1. Do the step 1-3 for [Part B1](#Part-B1)
+    1. Do the step 1-4 for [Part B1](#Part-B1)
 
     1. Run **npm run test** to run mocha to test on the code.
 
