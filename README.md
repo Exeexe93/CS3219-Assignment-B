@@ -8,7 +8,7 @@ Instructions on how to run the API locally and access the deployed API:
 
 2) Clone the code from [github repository](https://github.com/Exeexe93/CS3219-Assignment-B.git)
 
-3) After cloning the code, you are required to install the relevant node modules via command prompt using **npm install** at the root directory, which at the same as index.js.
+3) After cloning the code, you are required to install the relevant node modules via command prompt using **npm install** at the the same directory as index.js.
 
 4) You could run the Mongodb database by **nodemon index**.
 
