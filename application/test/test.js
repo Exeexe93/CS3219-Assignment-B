@@ -36,6 +36,9 @@ describe("Testing the api:", () => {
             chai.request(app)
                 .get('/api/contacts')
                 .end((err, res) => {
+                    if (err) {
+                        throw error;
+                    }
                     res.should.have.status(200);
                     res.body.should.be.a('object');
                     contacts = res.body.data;
@@ -55,6 +58,9 @@ describe("Testing the api:", () => {
             chai.request(app)
                 .get(`/api/contacts/${id}`)
                 .end((err, res) => {
+                    if (err) {
+                        throw error;
+                    }
                     res.should.have.status(200);
                     res.body.should.be.a('object');
                     expect(contacts[0]).to.deep.equal(res.body.data);
@@ -100,6 +106,9 @@ describe("Testing the api:", () => {
                     chai.request(app)
                         .get('/api/contacts')
                         .end((err, res) => {
+                            if (err) {
+                                throw error;
+                            }
                             res.should.have.status(200);
                             res.body.should.be.a('object');
                             for (contact in res.body.data) {
