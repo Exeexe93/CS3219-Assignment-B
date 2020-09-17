@@ -1,11 +1,18 @@
 language: node_js
 node_js:
-    - "12.8"
+- '12.8'
 services:
-    - mongodb
-before_script:
-    - cd application 
-    - npm install
-script: 
-    - npm run test
+- mongodb
 dist: trusty
+before_install:
+- openssl aes-256-cbc -K $encrypted_2fd045226a67_key -iv $encrypted_2fd045226a67_iv
+  -in client-secret.json.enc -out client-secret.json -d
+- gcloud auth activate-service-account --key-file client-secret.json
+install:
+- gcloud config set project CS3219-Assignment-B
+before_script:
+  - cd application
+  - npm install
+  script:
+  - npm run test
+  - gcloud -q app deploy app.yaml --promote
