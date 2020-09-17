@@ -4,8 +4,11 @@ node_js:
 services:
 - mongodb
 dist: trusty
+env:
+  global:
+    secure: mMLxjRoAKCoBZceA325EKl/kLnBALSOeT/4KwdGF6/vL/sQYt66s71wuW+8oY9jx6R7ClxgbdahOmeYu8EX90VJb82CVEUIkAEQ3rAi47AUzuv6gfz+60G7k1vsRSreiA6FJv7AW54VEU5bZqGJVLNJeb+5dUb1bUd3pKnPJtLhnLHKF8TKOquFVGpL+v3npNfUqCKDha3xcu4BprdY5/EhaxcaEm4iO3GzkrdogUNeSTdx2SfywfA2bZZmMVNnRVNFRvVXmKP05M4QN886cpzu7OoTa84EWLlxzCjfzpffA0dyfwWnA+PAfB579t4BhcDPtD7HWSOiYRVRGwtFFbCxzkW++13i10dgJ1fzodDEQIgHu2DHrIYrbZGjr61mkSYqmaz0p+Eme6ATKFvI25pPY1o/S/jHniBRY2GUmUNr149QbytcT4JV3pEP3Qx5TdiAwBn4FVL6j8qfQGUpz+EiLXCNZWV1ucol2Y81eGpDMs4+Iisu6tRun0JjJZDxoy7UbjST/1s6rptGJu7CQeCaL7GMCxeXfXQzHSyyGCFhzIwfnl3MYP/k4VmrH2KG7xiys8prPfv4sHsZixUecc1jVGkZ0VnLvyCodO7alQrDukL9b9WfsHtxeUfXTwsEWRZ0gWBm4f73WkVaDN6OHTNJUDXPccPObZ7gG8X+Y680=
 before_install:
-- openssl aes-256-cbc -K $encrypted_2fd045226a67_key -iv $encrypted_2fd045226a67_iv
+- openssl aes-256-cbc -K "$secret_key"
   -in client-secret.json.enc -out client-secret.json -d
 - gcloud auth activate-service-account --key-file client-secret.json
 install:
