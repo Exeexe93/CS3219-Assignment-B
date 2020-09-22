@@ -8,9 +8,6 @@ const { expect } = require('chai');
 chai.use(chaiHttp);
 chai.should();
 
-// Extend the timeout for mocha test
-mocha.timeout(5000);
-
 describe("Testing the api:", () => {
     var contacts = {};
     describe("From http:///localhost:8080/api/contacts:", () => {
@@ -47,7 +44,7 @@ describe("Testing the api:", () => {
                     contacts = res.body.data;
                     done();
                 });
-        });
+        }).timeout(5000);
     });
 
 
