@@ -20,7 +20,7 @@ Instructions on how to run the API locally and access the deployed API:
 
 7) In the PostMan, we could communicate with our database by the different functions via the following url address:
 
-* http:///localhost:8080/api/contacts
+* http://localhost:8080/api/contacts
 
     1. Get all contacts:
         1. Input the url address.
@@ -35,7 +35,7 @@ Instructions on how to run the API locally and access the deployed API:
         1. Under the x-www-form-urlencoded tab, fill in the name, email, phone and gender with their values.
         1. Press the **Send** button.
 
-* http:///localhost:8080/api/contacts/{input the contact id here}
+* http://localhost:8080/api/contacts/{input the contact id here}
 
     1. Get the details of the individual contact:
         1. Input the url address.
@@ -85,4 +85,15 @@ Instructions on how to run the API locally and access the deployed API:
 
 ## Part B3
 
-Communicate with the deployed API in Google App Engine via: https://cs3219-assignment-b-289709.et.r.appspot.com/api/
+1. Communicate with the deployed API in Google App Engine via PostMan.
+
+1. The steps for communicate to Google App Engine are the same as [Part B1](#Part-B1).
+
+1. Do take note that, the url address are different from communicate to localhost.
+
+You are required to use:
+
+* https://cs3219-assignment-b-289709.et.r.appspot.com/api/contacts instead of using http://localhost:8080/api/contacts.
+
+* https://cs3219-assignment-b-289709.et.r.appspot.com/api/contacts/{input the contact id here}
+ instead of http://localhost:8080/api/contacts/{input the contact id here}.
