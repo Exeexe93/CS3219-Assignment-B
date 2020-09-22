@@ -11,8 +11,12 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+
+
+const url = process.env.MONGODB_URI || "mongodb+srv://dbUser:qRHREWRi7vJdTdjs@cluster0.ec17n.gcp.mongodb.net/CS3219-Assignment?retryWrites=true&w=majority"
+
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true });
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 
 // Validation check to see whether successfully connected to Mongodb
