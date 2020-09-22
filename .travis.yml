@@ -9,10 +9,10 @@ before_install:
   -in client-secret.json.enc -out client-secret.json -d
 - gcloud auth activate-service-account --key-file client-secret.json
 install:
-- gcloud config set project cs3219-assignment-b-289709 
+- gcloud config set project cs3219-assignment-b-289709
 before_script:
 - cd application
 - npm install
 script:
 - npm run test
-- gcloud -q app deploy app.yaml --promote
+- gcloud -q app deploy app.yaml --project cs3219-assignment-b-289709 --version 1 --promote 
