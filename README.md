@@ -80,3 +80,7 @@ Instructions on how to run the API locally and access the deployed API:
         ![.travis.yml](https://github.com/Exeexe93/CS3219-Assignment-B/blob/master/images/travis.PNG?raw=true)
 
     1. After setting up the .travis.yml file, you can edit the README.md and push it to your repository and the travis will run the test.
+
+## Part B3
+
+Communicate with the deployed API in Google App Engine via: https://cs3219-assignment-b-289709.et.r.appspot.com/api/
