@@ -4,7 +4,8 @@
   "description": "An application using Restful API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "start": "node index.js"
   },
   "keywords": [
     "restful",
@@ -21,10 +22,7 @@
     "mongoose": "^5.10.2"
   },
   "engines": {
-    "node": "12.8"
-  },
-  "scripts": {
-    "start": "node index.js"
+    "node": "12.8",
+    "npm":"5.x"
   }  
-  
 }
