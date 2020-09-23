@@ -1,11 +1,6 @@
 runtime: nodejs12
 api_version: 1
 threadsafe: true
-handlers:
-  - url: /.*
-    secure: always
-    redirect_http_response_code: 301
-    script: auto
 basic_scaling:
   max_instances: 1
-  max_instances: 5m
+  idle_timeout: 5m
