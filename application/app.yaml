@@ -1,10 +1,11 @@
 runtime: nodejs12
-
-# Closed the instance when no incoming http request within 5mins
+api_version: 1
+threadsafe: true
+handlers:
+  - url: /.*
+    secure: always
+    redirect_http_response_code: 301
+    script: auto
 basic_scaling:
   max_instances: 1
-  idle_timeout: 5m
-resources:
-  cpu: 1
-  memory_gb: 0.3
-  disk_size_gb: 0.5
+  max_instances: 5m
