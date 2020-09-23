@@ -15,4 +15,4 @@ before_script:
 - npm install
 script:
 - npm run test
-- gcloud -q app deploy app.yaml --project cs3219-assignment-b-289709 --version 1 --promote 
+- gcloud -q app deploy app.yaml --project cs3219-assignment-b-289709 --version 2 --promote 
