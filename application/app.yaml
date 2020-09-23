@@ -3,7 +3,7 @@ runtime: nodejs12
 # Closed the instance when no incoming http request within 5mins
 basic_scaling:
   max_instances: 1
-  idle-timeout: 5m
+  idle_timeout: 5m
 resources:
   cpu: 1
   memory_gb: 0.3
