@@ -2,6 +2,8 @@
 
 [![travis status badge](https://travis-ci.com/Exeexe93/CS3219-Assignment-B.svg?branch=master)](https://travis-ci.com/github/Exeexe93/CS3219-Assignment-B)
 
+Things to take note: Project root directory is the directory where the README.md is at.
+
 ## Part B1
 
 Instructions on how to run the API locally and access the deployed API:
@@ -10,7 +12,7 @@ Instructions on how to run the API locally and access the deployed API:
 
 2. Clone the code from [github repository](https://github.com/Exeexe93/CS3219-Assignment-B.git)
 
-3. After cloning the code, change directory to the application folder by **cd application**.
+3. After cloning the code, change directory to the application folder by **cd application** from the project root directory.
 
 4. Then, you are required to install the relevant node modules via command prompt using **npm install**.
 
@@ -105,7 +107,7 @@ You are required to use:
 
 1. You are required to run the backend by change directory to the application folder and type **nodemon index** in the command prompt.
 
-1. Change directory to the frontend by **cd frontend**.
+1. 2. Open a new command terminal and change directory to the frontend folder by **cd application/frontend** from the project root directory.
 
 1. Next, run **npm run serve** to run the website.
 
