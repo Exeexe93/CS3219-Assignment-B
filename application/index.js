@@ -1,4 +1,5 @@
 // Import required modules
+let serverless = require("serverless-http");
 let express = require("express");
 let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
@@ -58,3 +59,4 @@ app.listen(port, function () {
 
 // Export our app for testing purpose
 module.exports = app;
+module.exports.handler = serverless(app);

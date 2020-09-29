@@ -90,17 +90,17 @@ Instructions on how to run the API locally and access the deployed API:
 
 ## Part B3
 
-1. Communicate with the deployed API in Google App Engine via PostMan.
+1. Communicate with the deployed API in AWS lambda via PostMan.
 
-1. The steps for communicate to Google App Engine are the same as [Part B1](#Part-B1).
+1. The steps for communicate to AWS lambda are the same as [Part B1](#Part-B1).
 
 1. Do take note that, the url address are different from communicate to localhost.
 
 You are required to use:
 
-- https://cs3219-assignment-b-289709.et.r.appspot.com/api/contacts instead of using http://localhost:8080/api/contacts.
+- https://uq49cg4meg.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts instead of using http://localhost:8080/api/contacts.
 
-- https://cs3219-assignment-b-289709.et.r.appspot.com/api/contacts/{input the contact id here}
+- https://uq49cg4meg.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts/{input the contact id here}
   instead of http://localhost:8080/api/contacts/{input the contact id here}.
 
 ## Part B4
