@@ -1,16 +1,21 @@
 language: node_js
 node_js:
-  - "12.8"
+- '12.8'
 services:
-  - mongodb
+- mongodb
 cache:
   directories:
-    - node_modules
+  - node_modules
 dist: trusty
 before_script:
-  - cd application
-  - npm install
-  - npm install -g serverless
+- cd application
+- npm install
+- npm install -g serverless
+- serverless config credentials --provider aws --key $aws-key --secret $aws-secret
 script:
-  - npm run test
-  - sls deploy
+- npm run test
+- sls deploy
+env:
+  global:
+  - secure: 65s28u02G3d/HMytisJ1kzia+Vne5jcmaLfzPZ+XE6WNBecEtOi2RyMhO0AyGbFfFecpSQrJq5IfLFzAreoCJfK9OiSElqQIQNaJSKwkV9W70U3ANTVsi3pdWo3sftsboLXLFzH9ESz9phn+QyJsSKxSugA2inwDmGIDjmZuGE9a9h4kaEJh3bb95eKh4VAP06dUWHyXe+qpWmalVD46yWm7MRypswCL/uHlyrdY8w3/nVX+gQ29b+BV6aRL2ek283k36KkbcP8we3r3yzY4iS52Dt6I8vIyOQfpmkr8au0DJdOL9VSEEFN7/Wyucp96MzsTBwFGMH2hRC6Yr7QRHeYYXuKQ0pK1d0OzYxFxMpewKcaL6IJ9tBlEdB7VJ8VUKYIPPz23eRJoXY1DAb8998mwlQ2QOASOSe+aOqh6rI5o3/lm79/k912LFBZV19kl/rP9kg71N0cxX9gj4yVFNNe1h5UGUL7PXbvAm7FO7LVpC43/kY43UjIAh0m8NWDsShnWfYhUtXLcA1/mtcl1ehUuFDrqBNup/CFCux3Tj05cgvSrh9t8ZuftD4DsTnuDjExgcheWnlc1DO1wDbW7wezfy709LHpFS0uJx3TnOTEucNUgKXfsK+AeHmHlZSDHiFHJjU6/N0J28xlEr9pE6PcXfZf4UCvJ2xGphZJbpOU=
+  - secure: RNjf8qDcK4HFRwssoaPqeBimzi7wUlFda5bGz4+K0UxKXx7lQ2fL5+UyPxPu4wfRr0Af+LBZV0DYgQ98UOyKPXvEK+ASEyKuogDKvsT+/fAiBpalXl0gVtrNgEhC5dld09ZDmqUpQdvYEFXi6A5/X1aYGjHUd7oTW0ZNhAq9Vg2RXrwbdEZXTF+6MjybjtabfwdFrk6r7w4Jf8AVz5tWrygyplmutbBMi0+B9LFHN45al+uw0XiMqT7n8u2rZRF4QgMYHCo1wJj0G1fIpAxT2erCgP1KNQAFRZ3C1y259vS3OeZZ3tdpdt4DU/cG/EJHQnkW/EgGtunlRJTgviFkq9FdylttzHw2XAWuZS+vKsvscFLSXLZy21bsFROnNJ3is7j/Mc30znCFHTLDDRO8s8ySViwSkI35ETMkPadFPEI/yCsHFNMbo7IsJp1ItEb8UPr2o+RPoG2bXY5O7NSjRNsdar3wp3jOcqKhzEgnd7kEnuK9CiRDvvY9jeu+q2P3P6Da/PcjYZtEWs2htoAktVg2SPGZhsSA0rgO6LPEiydBb/GXcrehhjGqJVr/FIEMnfTylkfDwCPAfCA6LgdnoqkzyRWlgjf4fn3q+EsZc0SKrcRJOu1N3izcDZ//9ISCfwISwqbsvWHLBUYmopZ5WfWaO9HdI8VrcDpKNDGWZAQ=
